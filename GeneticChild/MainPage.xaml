@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="GeneticChild.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GeneticChild"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" FontSize="24" Text="Child Genetic" x:Uid="uiTitle"/>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" Text="Liczba cech: " Name="uiCechaCount" />
+
+        <!--<Button Grid.Row="3" Name="uiMe" Content="Me" HorizontalAlignment="Center" Margin="10,10,10,10" Click="uiMe_Clicked"/>
+        <Button Grid.Row="4" Name="uiShe" Content="Spouse" HorizontalAlignment="Center" Margin="10,10,10,10" Click="uiShe_Clicked"/>
+        <Button Grid.Row="5" Name="uiChild" Content="Child" HorizontalAlignment="Center" Margin="10,10,10,10" Click="uiChild_Clicked"/>-->
+        <Button Grid.Row="3" Name="uiMe" HorizontalAlignment="Center" Margin="10,10,10,10" Click="uiMe_Clicked">
+            <Image Source="Assets/100_man_transp.png" Stretch="UniformToFill" Width="70"/>
+        </Button>
+        <Button Grid.Row="4" Name="uiShe" HorizontalAlignment="Center" Margin="10,10,10,10" Click="uiShe_Clicked">
+            <Image Source="Assets/100_woman_transp.png" Stretch="UniformToFill" Width="70"/>
+        </Button>
+        <Button Grid.Row="5" Name="uiChild" HorizontalAlignment="Center" Margin="10,10,10,10" Click="uiChild_Clicked">
+            <Image Source="Assets/100_child_transp.png" Stretch="UniformToFill" Width="70"/>
+        </Button>
+    </Grid>
+    <!--<Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Minimal" >
+            <AppBarButton Icon="Mail" Label="Send" Click="uiSendData_Click" Name="uiMail" x:Uid="uiMail"/>
+            <AppBarButton Icon="Download" Label="Import" Click="uiImportData_Click" Name="uiImport" x:Uid="uiImport"/>
+        </CommandBar>
+    </Page.BottomAppBar>-->
+</Page>

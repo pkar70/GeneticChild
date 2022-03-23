@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="GeneticChild.Dziecko"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GeneticChild"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+
+    <UserControl.Resources>
+        <local:KonwersjaPrawdop x:Key="KonwersjaPrawdop"/>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" FontSize="24" Text="Szacunek..." />
+
+        <ListView Grid.Row="1" x:Name="uiListItems" Margin="2,5,5,5" HorizontalContentAlignment="Stretch"  >
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment"  Value="Stretch"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid  HorizontalAlignment="Stretch" Margin="0,5,0,0"  >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"  />
+                            <ColumnDefinition Width="40" />
+                        </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="0" Text="{Binding sName, Mode=OneWay }" FontWeight="Bold"  />
+                        <TextBlock Grid.Column="1" Text="{Binding dGenotyp, Mode=OneWay, Converter={StaticResource KonwersjaPrawdop}}" HorizontalAlignment="Right" />
+
+
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <Button Grid.Row="2" HorizontalAlignment="Center" Margin="10,10,10,10" Click="uiOk_Click">
+            <SymbolIcon Symbol="Accept" />
+        </Button>
+
+    </Grid>
+
+    <Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Minimal" Name="uiCmdBar">
+            <AppBarButton Icon="Mail" Label="Mail" Click="uiCopyData_Click" x:Uid="uiDzieckoCopy"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+</Page>

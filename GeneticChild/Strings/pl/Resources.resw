@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="resDlgCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="resDlgContinue" xml:space="preserve">
+    <value>Dalej</value>
+  </data>
+  <data name="resDlgNo" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="resDlgYes" xml:space="preserve">
+    <value>Tak</value>
+  </data>
+  <data name="_lang" xml:space="preserve">
+    <value>pl</value>
+  </data>
+  <data name="cecha27rec" xml:space="preserve">
+    <value>Brak skłonności do dalekowzroczności</value>
+    <comment>bo chyba normalne jest DOM dla REC krótko</comment>
+  </data>
+  <data name="cecha01dom" xml:space="preserve">
+    <value>Krew - cecha A</value>
+  </data>
+  <data name="cecha01rec" xml:space="preserve">
+    <value>Krew - cecha A - brak</value>
+  </data>
+  <data name="cecha02dom" xml:space="preserve">
+    <value>Krew - cecha B</value>
+  </data>
+  <data name="cecha02rec" xml:space="preserve">
+    <value>Krew - cecha B - brak</value>
+  </data>
+  <data name="cecha03dom" xml:space="preserve">
+    <value>Krew Rh+</value>
+  </data>
+  <data name="cecha03rec" xml:space="preserve">
+    <value>Krew Rh-</value>
+  </data>
+  <data name="cecha12dom" xml:space="preserve">
+    <value>Włosy koloru nie-czerwonego</value>
+  </data>
+  <data name="cecha12rec" xml:space="preserve">
+    <value>Włosy koloru czerwonego</value>
+  </data>
+  <data name="cecha11dom" xml:space="preserve">
+    <value>Włosy ciemne</value>
+  </data>
+  <data name="cecha11rec" xml:space="preserve">
+    <value>Włosy jasne</value>
+  </data>
+  <data name="cecha36dom" xml:space="preserve">
+    <value>Uszy odstające</value>
+  </data>
+  <data name="cecha36rec" xml:space="preserve">
+    <value>Uszy nieodstające</value>
+  </data>
+  <data name="cecha38dom" xml:space="preserve">
+    <value>Język w trąbkę zwijalny</value>
+  </data>
+  <data name="cecha38rec" xml:space="preserve">
+    <value>Język w trąbkę niezwijalny</value>
+  </data>
+  <data name="cecha51dom" xml:space="preserve">
+    <value>Praworęczność</value>
+  </data>
+  <data name="cecha51rec" xml:space="preserve">
+    <value>Leworęczność</value>
+  </data>
+  <data name="cecha33dom" xml:space="preserve">
+    <value>Dołeczki w policzkach</value>
+  </data>
+  <data name="cecha33rec" xml:space="preserve">
+    <value>Brak dołeczków w policzkach</value>
+  </data>
+  <data name="cecha32dom" xml:space="preserve">
+    <value>Piegi</value>
+  </data>
+  <data name="cecha32rec" xml:space="preserve">
+    <value>Brak piegów</value>
+  </data>
+  <data name="cecha25dom" xml:space="preserve">
+    <value>Rzęsy długie</value>
+  </data>
+  <data name="cecha25rec" xml:space="preserve">
+    <value>Rzęsy krótkie</value>
+  </data>
+  <data name="cecha37dom" xml:space="preserve">
+    <value>Płatki uszu wolne</value>
+  </data>
+  <data name="cecha37rec" xml:space="preserve">
+    <value>Płatki uszu przyrośnięte </value>
+  </data>
+  <data name="cecha21dom" xml:space="preserve">
+    <value>Oko owalne</value>
+  </data>
+  <data name="cecha21rec" xml:space="preserve">
+    <value>Oko okrągłe</value>
+  </data>
+  <data name="cecha31dom" xml:space="preserve">
+    <value>Twarz owalna</value>
+  </data>
+  <data name="cecha31rec" xml:space="preserve">
+    <value>Twarz kwadratowa</value>
+  </data>
+  <data name="cecha43dom" xml:space="preserve">
+    <value>Kciuk lewy na prawym przy składaniu rąk</value>
+  </data>
+  <data name="cecha43rec" xml:space="preserve">
+    <value>Kciuk prawy na lewym przy składaniu rąk</value>
+  </data>
+  <data name="cecha13dom" xml:space="preserve">
+    <value>Włosy kręcone</value>
+  </data>
+  <data name="cecha13rec" xml:space="preserve">
+    <value>Włosy proste</value>
+  </data>
+  <data name="cecha14dom" xml:space="preserve">
+    <value>Tendencja do łysienia</value>
+  </data>
+  <data name="cecha14rec" xml:space="preserve">
+    <value>Tendencja do łysienia nieobecna</value>
+  </data>
+  <data name="cecha15dom" xml:space="preserve">
+    <value>Włosy obfite</value>
+  </data>
+  <data name="cecha15rec" xml:space="preserve">
+    <value>Włosy mało obfite</value>
+  </data>
+  <data name="cecha24dom" xml:space="preserve">
+    <value>Brwi szerokie</value>
+  </data>
+  <data name="cecha24rec" xml:space="preserve">
+    <value>Brwi wąskie</value>
+  </data>
+  <data name="cecha23dom" xml:space="preserve">
+    <value>Brwi rozdzdzielone</value>
+  </data>
+  <data name="cecha23rec" xml:space="preserve">
+    <value>Brwi łączone</value>
+  </data>
+  <data name="cecha34dom" xml:space="preserve">
+    <value>Nos garbaty</value>
+  </data>
+  <data name="cecha34rec" xml:space="preserve">
+    <value>Nos prosty</value>
+  </data>
+  <data name="cecha22dom" xml:space="preserve">
+    <value>Oczy duże</value>
+  </data>
+  <data name="cecha22rec" xml:space="preserve">
+    <value>Oczy małe</value>
+  </data>
+  <data name="cecha26dom" xml:space="preserve">
+    <value>Skłonność do astygmatyzmu</value>
+  </data>
+  <data name="cecha26rec" xml:space="preserve">
+    <value>Brak skłonności do astygmatyzmu</value>
+  </data>
+  <data name="cecha35dom" xml:space="preserve">
+    <value>Wargi szerokie</value>
+  </data>
+  <data name="cecha35rec" xml:space="preserve">
+    <value>Wargi wąskie</value>
+  </data>
+  <data name="cecha27dom" xml:space="preserve">
+    <value>Skłonność do dalekowzroczności</value>
+  </data>
+  <data name="cecha54dom" xml:space="preserve">
+    <value>Temperament nerwowy</value>
+  </data>
+  <data name="cecha54rec" xml:space="preserve">
+    <value>Temperament spokojny</value>
+  </data>
+  <data name="cecha41dom" xml:space="preserve">
+    <value>Palce dodatkowe u rąk/nóg</value>
+  </data>
+  <data name="cecha41rec" xml:space="preserve">
+    <value>Palce bez dodatkowych palców</value>
+  </data>
+  <data name="cecha42dom" xml:space="preserve">
+    <value>Palce zbyt długie/zbyt krótkie</value>
+  </data>
+  <data name="cecha42rec" xml:space="preserve">
+    <value>Palce normalnej długości</value>
+  </data>
+  <data name="cecha55dom" xml:space="preserve">
+    <value>Odporność na bluszcz Toxicodendron</value>
+  </data>
+  <data name="cecha55rec" xml:space="preserve">
+    <value>Alergia na bluszcz Toxicodendron</value>
+  </data>
+  <data name="cecha53dom" xml:space="preserve">
+    <value>Wysokie podbicie stopy</value>
+  </data>
+  <data name="cecha53rec" xml:space="preserve">
+    <value>Niskie podbicie stopy</value>
+  </data>
+  <data name="cecha52dom" xml:space="preserve">
+    <value>Karnacja ciemna</value>
+  </data>
+  <data name="cecha52rec" xml:space="preserve">
+    <value>Karnacja jasna</value>
+  </data>
+  <data name="cecha100dom" xml:space="preserve">
+    <value>Krew grupa 0</value>
+  </data>
+  <data name="cecha101dom" xml:space="preserve">
+    <value>Krew grupa A</value>
+  </data>
+  <data name="cecha102dom" xml:space="preserve">
+    <value>Krew grupa B</value>
+  </data>
+  <data name="cecha103dom" xml:space="preserve">
+    <value>Krew grupa AB</value>
+  </data>
+  <data name="cechaBloodType" xml:space="preserve">
+    <value>Krew grupa</value>
+  </data>
+  <data name="msgLiczbaCech" xml:space="preserve">
+    <value>Liczba cech</value>
+  </data>
+  <data name="msgOsobaDataChanged" xml:space="preserve">
+    <value>Zmieniono dane podstawowe, zapisać?</value>
+  </data>
+  <data name="msgOsobaEmailBodyHdr" xml:space="preserve">
+    <value>Załączam wyliczone dane cech</value>
+  </data>
+  <data name="msgOsobaEmailSubject" xml:space="preserve">
+    <value>Dane genetyczne</value>
+  </data>
+  <data name="msgOsobaEnterName" xml:space="preserve">
+    <value>Podaj imię (i ew. nazwisko):</value>
+  </data>
+  <data name="msgOsobaWantAddYourself" xml:space="preserve">
+    <value>Chcesz dodać siebie/współmałżonka?</value>
+  </data>
+  <data name="msgToolTipChildMan" xml:space="preserve">
+    <value>mężczyzny</value>
+  </data>
+  <data name="msgToolTipChildNoData" xml:space="preserve">
+    <value>Najpierw wprowadź dane</value>
+  </data>
+  <data name="msgToolTipChildParents" xml:space="preserve">
+    <value>rodziców</value>
+  </data>
+  <data name="msgToolTipChildPrawdop" xml:space="preserve">
+    <value>Prawdopodobieństwo u dziecka</value>
+  </data>
+  <data name="msgToolTipChildWoman" xml:space="preserve">
+    <value>kobiety</value>
+  </data>
+  <data name="uiImport.Label" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="uiMail.Label" xml:space="preserve">
+    <value>Wyślij</value>
+  </data>
+  <data name="uiOsobaAdd.Content" xml:space="preserve">
+    <value>Dodaj</value>
+  </data>
+  <data name="uiOsobaListaFenotyp.Header" xml:space="preserve">
+    <value>Lista cech fenotypowych:</value>
+  </data>
+  <data name="uiOsobaListaGenotyp.Header" xml:space="preserve">
+    <value>Lista cech genotypowych:</value>
+  </data>
+  <data name="uiOsobaMama.Content" xml:space="preserve">
+    <value>mama</value>
+  </data>
+  <data name="uiOsobaNote.PlaceholderText" xml:space="preserve">
+    <value>Dowolna notatka</value>
+  </data>
+  <data name="uiOsobaTata.Content" xml:space="preserve">
+    <value>tata</value>
+  </data>
+  <data name="uiTitle.Text" xml:space="preserve">
+    <value>Genetyczne dziecko</value>
+  </data>
+  <data name="msgDzieckoEmailBodyHdr" xml:space="preserve">
+    <value>Załączam prawdopodobieństwo cech genetycznych naszego dziecka</value>
+  </data>
+  <data name="uiDzieckoCopy.Label" xml:space="preserve">
+    <value>Wyślij</value>
+  </data>
+  <data name="msgBadInputData" xml:space="preserve">
+    <value>Nie potrafię zinterpretować wklejonych danych!</value>
+  </data>
+  <data name="msgPasteData" xml:space="preserve">
+    <value>Wklej dane:</value>
+  </data>
+  <data name="msgCechyAlreadyExist" xml:space="preserve">
+    <value>Wyczyścić aktualną listę cech?</value>
+  </data>
+  <data name="msgOsobaMamaAdd" xml:space="preserve">
+    <value>Mama (dodaj)</value>
+  </data>
+  <data name="msgOsobaSelectCecha" xml:space="preserve">
+    <value>--- wybierz widoczną cechę</value>
+  </data>
+  <data name="msgOsobaTataAdd" xml:space="preserve">
+    <value>Tata (dodaj)</value>
+  </data>
+</root>

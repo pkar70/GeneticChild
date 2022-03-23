@@ -1,0 +1,95 @@
+﻿<Page
+    x:Class="GeneticChild.Osoba"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GeneticChild"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+
+    <UserControl.Resources>
+        <local:KonwersjaPrawdop x:Key="KonwersjaPrawdop"/>
+    </UserControl.Resources>
+    
+    <Grid Margin="5,5,5,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0" Name="uiName" HorizontalAlignment="Center" Margin="0,3,0,5" FontSize="20" />
+
+        <!--<TextBlock Grid.Row="1" Text="Data urodzenia" HorizontalAlignment="Left" />
+        <CalendarDatePicker Grid.Row="1" Name="uiDatUr" HorizontalAlignment="Right"  />-->
+
+        <TextBox Grid.Row="2" Name="uiNotes" PlaceholderText="Dowolna notatka" x:Uid="uiOsobaNote" />
+
+        <Button Grid.Row="3" Name="uiMama" Margin="40,2,40,2" HorizontalAlignment="Left" Content="Mama" Click="uiMama_Click" x:Uid="uiOsobaMama"/>
+        <Button Grid.Row="3" Name="uiTata" Margin="40,2,40,2" HorizontalAlignment="Right" Content="Tata" Click="uiTata_Click" x:Uid="uiOsobaTata"/>
+
+        <ComboBox Grid.Row="4" Name="uiComboCech" Margin="0,10,0,2" VerticalAlignment="Center" />
+        <Button Grid.Row="4" Margin="0,10,0,2" HorizontalAlignment="Right" Content="Add" Click="uiCechaAdd_Click" x:Uid="uiOsobaAdd"/>
+
+        <ListView Grid.Row="5" x:Name="uiFenotypItems" Margin="2,5,5,5" HorizontalContentAlignment="Stretch" Header="Lista cech fenotypowych:" BorderBrush="Blue" BorderThickness="2" x:Uid="uiOsobaListaFenotyp">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment"  Value="Stretch"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid  HorizontalAlignment="Stretch" Margin="0,5,0,0"  >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"  />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" Text="{Binding sNazwa, Mode=OneWay }" FontWeight="Bold" VerticalAlignment="Center"  />
+                        <Button Grid.Column="1" Content="DEL" Click="uiDelCecha_Click" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ListView Grid.Row="6" x:Name="uiGenotypItems" Margin="2,5,5,5" HorizontalContentAlignment="Stretch"   Header="Lista cech genotypowych:"  BorderBrush="Blue" BorderThickness="2" x:Uid="uiOsobaListaGenotyp">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment"  Value="Stretch"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid  HorizontalAlignment="Stretch" Margin="0,5,0,0"  >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"  />
+                            <ColumnDefinition Width="40" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" Text="{Binding sName, Mode=OneWay }" FontWeight="Bold"  />
+                        <TextBlock Grid.Column="1" Text="{Binding dGenotyp, Mode=OneWay, Converter={StaticResource KonwersjaPrawdop}}" HorizontalAlignment="Right" />
+
+
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Grid.Row="7" Margin="0,10,0,2" HorizontalAlignment="Center" Content="OK" Click="uiOk_Click" />
+
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Minimal" Name="uiCmdBar">
+            <AppBarButton Icon="Mail" Label="Send" Click="uiSendData_Click" Name="uiMail" x:Uid="uiMail"/>
+            <AppBarButton Icon="Download" Label="Import" Click="uiImportData_Click" Name="uiImport" x:Uid="uiImport"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
